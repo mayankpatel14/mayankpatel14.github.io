@@ -1,99 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>JS + CSS Clock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5dbf1108d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="portfolio.css">
+<script type="text/javascript" src="index.js"></script>
+<title>Mayank Patel</title>
+</head>
+
 <body>
 
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container" data-aos="fade-up">
 
-    <div class="clock">
-      <div class="clock-face">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-      </div>
-    </div>
+            <a href="index.html" class="navbar-brand">MAYANK PATEL</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    	<div class="nav-link" onclick="changeColor()">Dark Mode</div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 align-self-center" data-aos="fade-right">
+                    <h1 class="name gl">Mayank Patel</h1>
+                    <h1 class="name2">
+                        <span class="txt-rotate" data-period="1000" data-rotate='[ "an AI freak!", "a Comepetitve Programmer!", "a Fitness Maniac!"]'></span>
+                    </h1>
+                    
+                    <p class="my-5">
+                        <a href="mailto:@mayankpatel.iitkgp@gmail.com" add target="_blank"><i class="fas fa-envelope fa-3x mr-3 icon"></i></a>
+                        <a href="https://www.linkedin.com/in/mayankpatel14/" add target="_blank"><i class="fab fa-linkedin fa-3x mr-3 icon"></i></a>
+                        <a href="https://github.com/mayankpatel14" add target="_blank"><i class="fab fa-github fa-3x mr-3 icon"></i></a>
+                    </p>
+
+                    <a href="https://docs.google.com/document/d/1aomkaoQbRuvGICshXnHLr852agKVlhHxWbzxxFvzyLE/edit?usp=sharing" add target="_blank" class="btn btn-md btn-outline-success mt-3">My Resume</a>
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+                <div class="psimg col-md-4" data-aos="fade-left">
+                    <img src="./Images/1.jpg" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--INFO-->
+    <section id="info" class="py-5">
+        <div class="container">
+            <h1 class="abc">ABOUT ME</h1>
+            <div class="info-content">
+                I am a Third-Year undergraduate student at IIT Kharagpur who is deeply motivated to dive and explore the evergrowing field of Technology. My interests mainly revolve around Machine Learning, Deep Learning, Computer Vision, Natural Language Processing & Data Science. Recently I have been enjoying Competitive Programming and tried my hands on Front-End Dvelopment.
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h1 class="abc">Skills</h1>
+
+            <div class="row text-center justify-content-between mb-3">
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/c.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>C</h5>
+                </div>
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/java.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>JAVA</h5>
+                </div>
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/python.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>Python</h5>
+                </div>
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/js.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>JS</h5>
+                </div>
+
+                <div class="col-12 col-md-2 plang">
+                    <img src="./Images/Icons/html.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>HTML</h5>
+                </div>
+
+            </div>
+
+            <div class="row text-center justify-content-between">
+
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/css.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>CSS</h5>
+                </div>
+
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/bootstrap.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>Bootstrap</h5>
+                </div>
+
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/XML.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>XML</h5>
+                </div>
+
+                <div class="col-6 col-md-2 plang">
+                    <img src="./Images/Icons/jsp.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>JSP</h5>
+                </div>
+
+                <div class="col-12 col-md-2 plang">
+                    <img src="./Images/Icons/SQL.png" alt="" class="img-fluid img-icon text-center my-3">
+                    <h5>mySQL</h5>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h1 class="abc">Experience</h1>
+
+            <div class="row py-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Data Science Intern</h3>
+                            <h5> Danalitic India Pvt. Ltd </h5>
+                            <p>Dec 2020 - Feb 2021</p>
+
+                            <ul>
+                                <li>Responsible for organizing more than 30 contents into blogs to be easily understood by readers.</li>
+                                <li>Specialized in writing technical topics, guest blogs that include data science, machine learning algorithms, probability and statistics, regression.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Technical Content Writer</h3>
+                            <h5>Excelr Solutions</h5>
+                            <p>Aug 2020 – present</p>
+
+                            <ul>
+                                <li>Responsible for organizing more than 30 contents into blogs to be easily understood by readers.</li>
+                                <li>Specialized in writing technical topics, guest blogs that include data science, machine learning algorithms, probability and statistics, regression.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Machine Learning Intern (NLP)</h3>
+                            <h5>Indian Institute of Technology, Banaras Hindu University</h5>
+                            <p>July 2020 - Sep 2020</p>
+
+                            <ul>
+                                <li>Identification of Informative Covid-19 Tweets using Machine Learning.</li>
+                                <li>A few techniques were used and two models that showed promising results in tweet classification tasks were DistilBERT and FastText. DistilBERT achieves an F1 score of 0.7508 on the test set, which is the best of our submissions.</li>
+                                <li>Research Paper: Co-authored at:​ ​<a href="https://www.aclweb.org/anthology/2020.wnut-1.56/"> https://www.aclweb.org/anthology/2020.wnut-1.56/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Android Application Developer Intern</h3>
+                            <h5>Northeast Frontier Railway, Dept. of IT</h5>
+                            <p>July 2019 – August 2019</p>
+
+                            <ul>
+                                <li>This Android Application is developed where users can view the information about 10 Registered blood donors at one time nearby to them.</li>
+                                <li>The aim of developing this application is to reduce the time to a great extent that is spent in searching for the right donor and the availability of blood required.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Android Application Developer Intern</h3>
+                            <h5>Assam Power Distribution Corporation Limited, Data Center</h5>
+                            <p>June 2019 – July 2019</p>
+
+                            <ul>
+                                <li>This Android Applicationis developed which provides an easier and much efficient app based platform to act more efficiently.</li>
+                                <li>This app has been developed in a simple, user-friendly manner which requires only a one-time registration process and then can search for contact details of any official.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container" data-aos="zoom-in-up">
+            <h1 class="abc pt-5">Projects</h1>
+            <h4>What Technologies I know!</h4>
+
+            <div class="row py-3">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./Images/Projects/Sentiment-analysis-of-Twitter-Social.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Sentiment Analysis</h4>
+                            <p class="card-text">Briefly explained two models that showed promising results in tweet classification tasks: DistilBERT and FastText. DistilBERT achieves a F1 score of 0.7508 on the test set, which is the best of our submissions.
+                            </p>
+                            <p>Technologies: <strong>Python (ML, NLP)</strong></p>
+                            <a href="https://www.aclweb.org/anthology/2020.wnut-1.56/" add target="_blank" class="btn btn-sm btn-outline-success">Research Paper</a>
+                            <a href="https://github.com/EshitaNandy/IRLab-IITBHU-at-WNUT-2020" add target="_blank" class="btn btn-sm btn-outline-success">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./Images/Projects/Online Food.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">HTML CSS PROJECTS</h4>
+                            <p class="card-text">Created two fully responsive website from scratch with the help of HTML and CSS. One of the website is a prototype of food delivery services and the other for architectural design.</p>
+                            <p>Technologies: <strong>HTML, CSS</strong></p>
+                            <a href="https://github.com/EshitaNandy/HTML-CSS-PROJECTS-github.io/tree/main/THE%20GOOD%20FOOD" add target="_blank" class="btn btn-sm btn-outline-success">GoodFood Code</a>
+                            <a href="https://github.com/EshitaNandy/HTML-CSS-PROJECTS-github.io/tree/main/ARCHITECTURE%20WEBSITE" add target="_blank" class="btn btn-sm btn-outline-success">Architecture Code</a>
+                            <a href="VIDEOS\THE GOOD FOOD.mp4" add target="_blank" class="btn btn-sm btn-outline-success">GoodFood Video</a>
+
+                            <a href="VIDEOS\ARCHITECTURE WEBSITE.mp4" add target="_blank" class="btn btn-sm btn-outline-success">Architecture Video</a>
 
 
-  <style>
-    html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
-      background-size: cover;
-      font-family: 'helvetica neue';
-      text-align: center;
-      font-size: 10px;
-    }
+                        </div>
+                    </div>
+                </div>
 
-    body {
-      margin: 0;
-      font-size: 2rem;
-      display: flex;
-      flex: 1;
-      min-height: 100vh;
-      align-items: center;
-    }
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./Images\Projects\JSP.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">HTML CSS JAVASCRIPT PROJECTS</h4>
+                            <p class="card-text">Created three fully responsive website from scratch with the help of HTML, CSS and JAVASCRIPT. The websites are prototype of Online Library Portal, PIANO and PASSWORD GENERATOR</p>
+                            <p>Technologies: <strong>HTML, CSS, JAVASCRIPT</strong></p>
+                            <a href="https://github.com/EshitaNandy/HTML-CSS-JS-Projects.github.io/tree/main/LIBRARY%20SYSTEM" add target="_blank" class="btn btn-sm btn-outline-success">Library Code</a>
+                            <a href="https://github.com/EshitaNandy/HTML-CSS-JS-Projects.github.io/tree/main/PASSWORD%20GENERATOR" add target="_blank" class="btn btn-sm btn-outline-success">Password Code</a>
+                            <a href="https://github.com/EshitaNandy/HTML-CSS-JS-Projects.github.io/tree/main/PIANO%20APPLICATION" add target="_blank" class="btn btn-sm btn-outline-success">Piano Code</a>
 
-    .clock {
-      width: 30rem;
-      height: 30rem;
-      border: 20px solid white;
-      border-radius: 50%;
-      margin: 50px auto;
-      position: relative;
-      padding: 2rem;
-      box-shadow:
-        0 0 0 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
-        0 0 10px rgba(0,0,0,0.2);
-    }
 
-    .clock-face {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
-    }
+                            <a href="VIDEOS\LIBRARY SYSTEM.mp4" add target="_blank" class="btn btn-sm btn-outline-success">Library Video</a>
+                            <a href="VIDEOS\PASSWORD GENERATOR.mp4" add target="_blank" class="btn btn-sm btn-outline-success">Password Video</a>
+                            <a href="VIDEOS\PIANO.mp4" add target="_blank" class="btn btn-sm btn-outline-success">Piano Video</a>
 
-    .hand {
-      width: 50%;
-      height: 6px;
-      background: black;
-      position: absolute;
-      top: 50%;
-      transform-origin: 100%;
-      transform: rotate(90deg);
-      transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-    }
-</style>
 
-<script>
-  const secondHand = document.querySelector('.second-hand');
-  const minsHand = document.querySelector('.min-hand');
-  const hourHand = document.querySelector('.hour-hand');
+                        </div>
+                    </div>
+                </div>
 
-  function setDate() {
-    const now = new Date();
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./Images/Projects/JSP Calc.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Java Server Page Project</h4>
+                            <p class="card-text">Created a simple calculator using HTML and JSP which performs basic arithmethic operations including addition, substraction, multiplication and division. It displays the result in another page. </p>
+                            <p>Technologies: <strong>HTML, JSP</strong></p>
+                            <a href="https://github.com/EshitaNandy/JSP-PROJECTS.github.io" add target="_blank" class="btn btn-sm btn-outline-success">Code</a>
+                            <a href="VIDEOS\JSP CALCULATOR.mp4" add target="_blank" class="btn btn-sm btn-outline-success">Video</a>
 
-    const seconds = now.getSeconds();
-    const secondsDegrees = ((seconds / 60) * 360) + 90;
-    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+                        </div>
+                    </div>
+                </div>
 
-    const mins = now.getMinutes();
-    const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
-    minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./Images/Projects/Game.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Bubble Shooter Game</h4>
+                            <p class="card-text">Created a simple Game which is quite common to all of us "Bubble Shooter Game" and score is updated instantly. Try once! </p>
+                            <p>Technologies: <strong>HTML, CSS and Javascript</strong></p>
+                            <a href="https://github.com/EshitaNandy/HTML-CSS-JS-Projects.github.io/tree/main/BUBBLE%20SHOOTER%20GAME" add target="_blank" class="btn btn-sm btn-outline-success">Code</a>
+                            <a href="VIDEOS\BUBBLE SHOOTER GAME.mp4" add target="_blank" class="btn btn-sm btn-outline-success">Video</a>
 
-    const hour = now.getHours();
-    const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
-    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-  }
+                        </div>
+                    </div>
+                </div>
 
-  setInterval(setDate, 1000);
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./Images/Projects/Corona.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">COVID-19-India-Analysis
+                            </h4>
+                            <p class="card-text">The coronavirus outbreak continues to spread, so the analysis has been done to have predictions on its further spread in the country. </p>
+                            <p>Technologies: <strong>PYTHON (Data Visualization)</strong></p>
 
-  setDate();
+                            <a href="https://github.com/EshitaNandy/COVID-19-India-Analysis" add target="_blank" class="btn btn-sm btn-outline-success">Code</a>
+                            <a href="https://github.com/EshitaNandy/COVID-19-India-Analysis/blob/master/COVID%20-%2019%20India%20Analysis.pdf" add target="_blank" class="btn btn-sm btn-outline-success">PDF</a>
 
-</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center developers">
+
+        <p> This site is developed by
+            <a href="https://www.linkedin.com/in/eshita-nandy/" class="footer">
+                <span class="wtef-blue">MAYANK PATEL</span>
+            </a>
+        </p>
+        <p> &copy; 2021</p>
+    </footer>
+
+    <div id="preloader"></div>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+    <script>
+        AOS.init({
+            delay: 70,
+            duration: 400,
+            once: false
+        })
+    </script>
 </body>
+
 </html>
